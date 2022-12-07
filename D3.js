@@ -12,27 +12,12 @@ if (a > b) {
   console.log(a);
 } else if (b > a) {
   console.log(b);
-} else if (b == a) {
+} else if (b === a) {
   console.log("I numeri sono uguali");
 } else {
   console.log("Errore!");
 }
 
-// Dovrebbe funzionare (?) La costante dovrebbe poter cambiare il valore ma non il tipo.
-
-/*
-b = 8;
-
-if (a > b) {
-  console.log(a);
-} else if (b > a) {
-  console.log(b);
-} else if (b == a) {
-  console.log("I numeri sono uguali");
-} else {
-  console.log("Errore!");
-}
-*/
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
