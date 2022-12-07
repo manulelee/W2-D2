@@ -109,12 +109,33 @@ console.log("Esercizio 7");
 let g = 3;
 let h = 2;
 let i = 1;
-if (g < h || g < i) {
+if (g < h && g < i) {
   console.log(g);
-} else if (h < g || h < i) {
+  if (h < i) {
+    console.log(h);
+    console.log(i);
+  } else {
+    console.log(i);
+    console.log(h);
+  }
+} else if (h < g && h < i) {
   console.log(h);
-} else if (i < g || i < h) {
+  if (g < i) {
+    console.log(g);
+    console.log(i);
+  } else {
+    console.log(i);
+    console.log(g);
+  }
+} else if (i < g && i < h) {
   console.log(i);
+  if (h < g) {
+    console.log(h);
+    console.log(g);
+  } else {
+    console.log(g);
+    console.log(h);
+  }
 }
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
